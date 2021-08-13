@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct InvoiceView: View {
+    
     var myDivider: some View{
         Divider()
             .background(Color.white)
@@ -22,7 +23,7 @@ struct InvoiceView: View {
     var topHeading: some View{
         HStack{
             VStack(alignment: .leading){
-                Text("Gatewai, LLC")
+                Text("Company Intl., LLC")
                     .fontWeight(.thin)
                     .font(.title)
                 
@@ -77,7 +78,7 @@ struct InvoiceView: View {
     }
     
     var workCompleted: some View{
-        Group{
+        VStack(spacing: 18){
             Text("Work Completed".uppercased())
                 .fontWeight(.light)
                 .font(.system(size: 7))
@@ -86,13 +87,13 @@ struct InvoiceView: View {
                     RoundedRectangle(cornerRadius: 15)
                         .stroke(lineWidth: 0.5)
                 )
-            
-            Spacer()
 
-            ForEach(0...10, id:\.self){ item in
-                lineItem
-                myDivider
-                    .opacity(0.4)
+            VStack{
+                ForEach(0...10, id:\.self){ item in
+                    lineItem
+                    myDivider
+                        .opacity(0.4)
+                }
             }
         }
     }
@@ -162,6 +163,7 @@ struct InvoiceView: View {
                 )
             }
         }
+        .statusBar(hidden: true)
         .edgesIgnoringSafeArea(.all)
         .foregroundColor(.white.opacity(0.8))
     }
