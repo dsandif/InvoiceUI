@@ -11,7 +11,7 @@ import SwiftUI
 struct InvoiceUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            InvoiceView()
         }
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A60C9BE926C62F14001021D7 /* InvoiceUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9BE826C62F14001021D7 /* InvoiceUIApp.swift */; };
-		A60C9BEB26C62F14001021D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9BEA26C62F14001021D7 /* ContentView.swift */; };
 		A60C9BED26C62F17001021D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60C9BEC26C62F17001021D7 /* Assets.xcassets */; };
 		A60C9BF026C62F17001021D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60C9BEF26C62F17001021D7 /* Preview Assets.xcassets */; };
 		A60C9BFB26C62F17001021D7 /* InvoiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9BFA26C62F17001021D7 /* InvoiceUITests.swift */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		A60C9BE526C62F14001021D7 /* InvoiceUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvoiceUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60C9BE826C62F14001021D7 /* InvoiceUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceUIApp.swift; sourceTree = "<group>"; };
-		A60C9BEA26C62F14001021D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A60C9BEC26C62F17001021D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A60C9BEF26C62F17001021D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A60C9BF126C62F17001021D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				A60C9BE826C62F14001021D7 /* InvoiceUIApp.swift */,
-				A60C9BEA26C62F14001021D7 /* ContentView.swift */,
 				A60C9BEC26C62F17001021D7 /* Assets.xcassets */,
 				A60C9BF126C62F17001021D7 /* Info.plist */,
 				A60C9BEE26C62F17001021D7 /* Preview Content */,
@@ -262,7 +259,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A60C9BEB26C62F14001021D7 /* ContentView.swift in Sources */,
 				A60C9C1626C62FB2001021D7 /* InvoiceView.swift in Sources */,
 				A60C9BE926C62F14001021D7 /* InvoiceUIApp.swift in Sources */,
 			);
