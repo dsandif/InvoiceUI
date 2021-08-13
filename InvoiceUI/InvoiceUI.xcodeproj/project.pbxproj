@@ -13,7 +13,7 @@
 		A60C9BF026C62F17001021D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60C9BEF26C62F17001021D7 /* Preview Assets.xcassets */; };
 		A60C9BFB26C62F17001021D7 /* InvoiceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9BFA26C62F17001021D7 /* InvoiceUITests.swift */; };
 		A60C9C0626C62F17001021D7 /* InvoiceUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9C0526C62F17001021D7 /* InvoiceUIUITests.swift */; };
-		A60C9C1626C62FB2001021D7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9C1526C62FB2001021D7 /* WelcomeView.swift */; };
+		A60C9C1626C62FB2001021D7 /* InvoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C9C1526C62FB2001021D7 /* InvoiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +46,7 @@
 		A60C9C0126C62F17001021D7 /* InvoiceUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvoiceUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60C9C0526C62F17001021D7 /* InvoiceUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceUIUITests.swift; sourceTree = "<group>"; };
 		A60C9C0726C62F17001021D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A60C9C1526C62FB2001021D7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		A60C9C1526C62FB2001021D7 /* InvoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvoiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +102,7 @@
 				A60C9BEC26C62F17001021D7 /* Assets.xcassets */,
 				A60C9BF126C62F17001021D7 /* Info.plist */,
 				A60C9BEE26C62F17001021D7 /* Preview Content */,
-				A60C9C1526C62FB2001021D7 /* WelcomeView.swift */,
+				A60C9C1526C62FB2001021D7 /* InvoiceView.swift */,
 			);
 			path = InvoiceUI;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A60C9BEB26C62F14001021D7 /* ContentView.swift in Sources */,
-				A60C9C1626C62FB2001021D7 /* WelcomeView.swift in Sources */,
+				A60C9C1626C62FB2001021D7 /* InvoiceView.swift in Sources */,
 				A60C9BE926C62F14001021D7 /* InvoiceUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

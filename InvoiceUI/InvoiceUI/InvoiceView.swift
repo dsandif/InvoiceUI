@@ -1,5 +1,5 @@
 //
-//  WelcomeView.swift
+//  InvoiceView.swift
 //  InvoiceUI
 //
 //  Created by Darien Sandifer on 8/12/21.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WelcomeView: View {
+struct InvoiceView: View {
     var myDivider: some View{
         Divider()
             .background(Color.white)
@@ -169,13 +169,13 @@ struct WelcomeView: View {
 
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
-        WelcomeView()
+        InvoiceView()
             .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
             .previewDisplayName("iPhone 8")
-        WelcomeView()
+        InvoiceView()
             .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))
             .previewDisplayName("iPhone 11 Pro Max")
-        WelcomeView()
+        InvoiceView()
             .previewDevice(PreviewDevice(rawValue: "IPad Air 4th generation"))
             .previewDisplayName("IPad Air (4th generation)")
     }
