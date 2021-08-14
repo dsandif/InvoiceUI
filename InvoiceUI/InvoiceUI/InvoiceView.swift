@@ -8,6 +8,18 @@
 import SwiftUI
 
 struct InvoiceView: View {
+    let items: [LineItem] = [
+        LineItem(quantity: 4, name: "fixed washing machine", amount: 1200.0, quantityType: "hours"),
+        LineItem(quantity: 2, name: "mowed lawn", amount: 100.0, quantityType: "hours"),
+        LineItem(quantity: 20, name: "created website", amount: 1200.0, quantityType: "hours"),
+        LineItem(quantity: 3, name: "patrolled campsite", amount: 300.0, quantityType: "days"),
+        LineItem(quantity: 4, name: "housekeeping services", amount: 1200.0, quantityType: "hours"),
+        LineItem(quantity: 2, name: "fixed computer", amount: 200.0, quantityType: "hours"),
+        LineItem(quantity: 6, name: "babysitting", amount: 250.0, quantityType: "hours"),
+        LineItem(quantity: 6, name: "painted fencing", amount: 150.0, quantityType: "hours"),
+        LineItem(quantity: 2, name: "siding for house", amount: 1400.0, quantityType: "days"),
+        LineItem(quantity: 1, name: "callibrated television", amount: 50.0, quantityType: "hours"),
+    ]
     
     var myDivider: some View{
         Divider()
@@ -54,34 +66,11 @@ struct InvoiceView: View {
         }
     }
     
-    var lineItem: some View{
-        HStack(alignment: .center, spacing: 20){
-            Text("Fixed Washing machine")
-                .fontWeight(.light)
-                .multilineTextAlignment(.leading)
-                .lineLimit(3)
-                .truncationMode(.tail)
-            
-            Text("5 hours")
-                .fontWeight(.light)
-                .foregroundColor(Color("Blue300"))
-                .background(RoundedRectangle(cornerRadius: 25.0).frame(minWidth: 50, minHeight: 12, alignment: .center)
-                )
-            
-            Spacer()
-            
-            Text("$100.23")
-                .fontWeight(.heavy)
-        }
-        .font(.system(size: 10))
-
-    }
-    
     var workCompleted: some View{
         VStack(spacing: 18){
-            Text("Work Completed".uppercased())
+            Text("Work Completed")
                 .fontWeight(.light)
-                .font(.system(size: 7))
+                .font(.system(size: 7).lowercaseSmallCaps())
                 .padding([.vertical,.horizontal], 3.5)
                 .overlay(
                     RoundedRectangle(cornerRadius: 15)
@@ -89,8 +78,9 @@ struct InvoiceView: View {
                 )
 
             VStack{
-                ForEach(0...10, id:\.self){ item in
-                    lineItem
+                ForEach(items){ item in
+                    LineItemView(item: item)
+
                     myDivider
                         .opacity(0.4)
                 }
@@ -102,9 +92,10 @@ struct InvoiceView: View {
         VStack(spacing: 20){
             Text("total: $10000")
                 .fontWeight(.heavy)
-
+            
             payNowbtn
         }
+        .font(.title3.smallCaps())
         .foregroundColor(.white.opacity(0.8))
     }
     
